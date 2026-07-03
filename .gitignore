@@ -4,3 +4,6 @@ node_modules/
 .DS_Store
 mock_db.json
 tsconfig.tsbuildinfo
+
+# Old nested project (kept locally, not needed on GitHub)
+peacock-main/
