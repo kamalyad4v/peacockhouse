@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/peacock-main/frontend/$1" }
-  ]
+  "framework": "nextjs",
+  "rootDirectory": "peacock-main/frontend",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install --legacy-peer-deps",
+  "outputDirectory": ".next"
 }
