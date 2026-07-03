@@ -1,6 +1,5 @@
 {
-  "buildCommand": "cd peacock-main/frontend && npm install --legacy-peer-deps && npm run build",
-  "outputDirectory": "peacock-main/frontend/.next",
-  "framework": "nextjs",
-  "installCommand": "echo 'skip'"
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/peacock-main/frontend/$1" }
+  ]
 }
