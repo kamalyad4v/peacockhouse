@@ -1,0 +1,166 @@
+{
+  "project_name": "Peacock Blouse House",
+  "app_type": "cinematic_3d_landing_page",
+  "theme": "dark",
+  "archetype": "5 (Luxury)",
+  "emotional_tone": "Cinematic, Expensive, Mysterious, Immersive",
+  "design_philosophy": "Godly-level Awwwards standard. Asymmetric editorial layouts, sharp jewel-tone commitments, custom cursors/selection, iridescent shader color specs, staggered motion timings, and glass/grain overlays.",
+  "typography": {
+    "fonts": {
+      "headings": "Cormorant Garamond, serif",
+      "body": "Manrope, sans-serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl lg:text-8xl tracking-tighter leading-none font-light",
+      "h2": "text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight",
+      "h3": "text-2xl md:text-3xl lg:text-4xl tracking-tight",
+      "body_large": "text-lg md:text-xl leading-relaxed tracking-wide",
+      "body": "text-base leading-relaxed text-white/80",
+      "labels": "text-xs uppercase tracking-[0.2em] text-gold/70"
+    },
+    "rules": [
+      "Headings must use tight letter spacing.",
+      "Overlines and labels must be uppercase with wide tracking.",
+      "Avoid bold weights for headings; use light or regular to maintain editorial elegance."
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#05070A",
+      "background_secondary": "#0A0D14",
+      "surface": "#0F141E",
+      "primary": "#008080",
+      "emerald": "#097969",
+      "sapphire": "#0F52BA",
+      "gold": "#D4AF37",
+      "gold_light": "#F3E5AB",
+      "text_primary": "#F8F9FA",
+      "text_secondary": "rgba(248, 249, 250, 0.6)",
+      "border": "rgba(212, 175, 55, 0.15)"
+    },
+    "shader_specs": {
+      "iridescent": {
+        "base_color": "vec3(0.0, 0.1, 0.2)",
+        "interference_colors": ["#097969", "#0F52BA", "#008080", "#D4AF37"],
+        "roughness": 0.2,
+        "metalness": 0.8
+      }
+    },
+    "rules": [
+      "Never use pure black; always use a deep obsidian or sapphire-tinted dark base.",
+      "Use gold sparingly for highlights, borders, and interactive states.",
+      "Text selection should use a sapphire background with gold text."
+    ]
+  },
+  "layout": {
+    "spacing": {
+      "section_padding": "py-24 md:py-32 lg:py-48",
+      "container": "max-w-[100rem] mx-auto px-6 md:px-12 lg:px-24"
+    },
+    "grids": {
+      "editorial": "grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16",
+      "bento_features": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6"
+    },
+    "rules": [
+      "Avoid symmetric grids. Use 3-column / 5-column or offset spans for an editorial feel.",
+      "Overlap text and images to create depth.",
+      "Apply high padding within bordered containers."
+    ]
+  },
+  "surfaces_and_textures": {
+    "glassmorphism": "backdrop-blur-2xl bg-black/40 border border-white/5",
+    "grain_overlay": "pointer-events-none fixed inset-0 opacity-[0.03] mix-blend-screen bg-[url('/noise.png')] z-50",
+    "shimmer_effect": "relative overflow-hidden before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent"
+  },
+  "interactions_and_motion": {
+    "scroll": "Lenis for smooth momentum scrolling. GSAP ScrollTrigger for pinned sections and parallax.",
+    "cursor": "Custom dot cursor that expands on hover and shifts color to gold.",
+    "hover_states": "Images scale up slightly (1.05) inside hidden-overflow containers. Text shifts color slightly or gains a subtle glow.",
+    "transitions": "Use cubic-bezier(0.76, 0, 0.24, 1) for a cinematic, weighted feel."
+  },
+  "sections_breakdown": {
+    "Hero": {
+      "concept": "Pinned 3D procedural peacock with iridescent shader. Feathers fan out dynamically. Typographic reveal.",
+      "components": ["Canvas", "ScrollTrigger", "ProceduralFeathers"],
+      "motion": "Camera zooms slightly on scroll. Feathers animate open sequentially. Brand text 'Peacock Blouse House' fades/types in with gold shimmer."
+    },
+    "AboutUs": {
+      "concept": "Zoom continues from hero, passing through a feather structure into a deep background. Text panels reveal asynchronously.",
+      "components": ["PinnedSection", "TextReveal", "ParticleBackground"],
+      "motion": "Panel-by-panel slide up and fade. Background morphs to a subtle floating fabric/particle texture."
+    },
+    "ClothQuality": {
+      "concept": "Extreme close-up macro shots of luxury fabric. Cinematic layout with large typography stats.",
+      "components": ["ParallaxImage", "Counter", "3DFabricSwatch (Optional)"],
+      "motion": "Scroll-triggered zoom into fabric images. Animated counting-up stats for '100% Premium Cotton' etc."
+    },
+    "WhyChooseUs": {
+      "concept": "Staggered feature cards representing brand pillars. 3D tilt effect on hover.",
+      "components": ["TiltCard", "BentoGrid"],
+      "motion": "Cards animate in with stagger scale/fade. Parallax image inside card on hover."
+    },
+    "Footer": {
+      "concept": "Dark, expansive footer with a shimmering peacock feather divider.",
+      "components": ["NewsletterForm", "SocialLinks", "ShimmerDivider"],
+      "motion": "Divider shimmers continuously. Footer content reveals smoothly on intersection."
+    }
+  },
+  "media": {
+    "images": [
+      {
+        "category": "fabric_macro_1",
+        "url": "https://images.pexels.com/photos/6275998/pexels-photo-6275998.jpeg",
+        "description": "Rich blue satin fabric highlighting luxurious texture."
+      },
+      {
+        "category": "fabric_macro_2",
+        "url": "https://images.pexels.com/photos/4863033/pexels-photo-4863033.jpeg",
+        "description": "Deep purple/dark elegant folded fabric."
+      },
+      {
+        "category": "embroidery_gold",
+        "url": "https://images.pexels.com/photos/2933639/pexels-photo-2933639.jpeg",
+        "description": "Luxurious fabric adorned with intricate gold embroidery."
+      },
+      {
+        "category": "editorial_model",
+        "url": "https://images.pexels.com/photos/15432338/pexels-photo-15432338.jpeg",
+        "description": "High end fashion editorial dark."
+      },
+      {
+        "category": "feather_texture",
+        "url": "https://images.unsplash.com/photo-1578885564199-db62248858cf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxwZWFjb2NrJTIwZmVhdGhlciUyMHRleHR1cmV8ZW58MHx8fHwxNzgzMDYwNTIzfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Teal and green peafowl feather texture."
+      }
+    ]
+  },
+  "tech_stack": {
+    "dependencies": [
+      "react",
+      "three",
+      "@react-three/fiber",
+      "@react-three/drei",
+      "gsap",
+      "@gsap/react",
+      "lenis",
+      "lucide-react",
+      "clsx",
+      "tailwind-merge"
+    ]
+  },
+  "testing": {
+    "rules": [
+      "All interactive elements must include a data-testid attribute in kebab-case."
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Do not use generic UI libraries for the main layout; build custom HTML/Tailwind for maximum editorial control.",
+    "Implement Lenis at the root layout for momentum scrolling.",
+    "Build the 3D procedural peacock feather using shaders in R3F—do not load an external GLB asset. The shader should transition between teal, blue, green, and gold based on camera angle/normal.",
+    "Use GSAP ScrollTrigger to pin the Hero section, transition the 3D camera into the feather, and reveal the About Us content.",
+    "Ensure the preloader is built with a dark theme and shows a percentage loaded.",
+    "Add a global ambient sound toggle (muted by default) that plays a subtle, atmospheric drone or nature sound.",
+    "Ensure all text remains readable via contrast or text-shadows.",
+    "Add an animated custom cursor."
+  ]
+}
