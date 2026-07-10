@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import Peacock3D from "@/components/peacock/Peacock3D";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ShoppingBag, User } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 export default function Hero() {
@@ -100,9 +101,29 @@ export default function Hero() {
                 className="max-w-xl font-sans text-xs font-light tracking-[0.28em] text-white/70 md:text-[13px]"
                 data-testid="pk-hero-subtitle"
               >
-                COUTURE BLOUSES · HAND-EMBROIDERED FOR THE MODERN MUSE
+                COUTURE SAREES &amp; BLOUSES · HAND-EMBROIDERED FOR THE MODERN MUSE
               </p>
               <div className="pk-hairline w-16" />
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="mt-10 flex items-center gap-4 flex-wrap justify-center">
+              <Link
+                href="/marketplace"
+                className="flex items-center gap-2 px-7 py-3.5 text-sm font-semibold tracking-[0.2em] uppercase text-black transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]"
+                style={{ background: '#D4AF37', borderRadius: '2px' }}
+              >
+                <ShoppingBag className="w-4 h-4" strokeWidth={2} />
+                Shop Collection
+              </Link>
+              <Link
+                href="/auth/login"
+                className="flex items-center gap-2 px-7 py-3.5 text-sm font-medium tracking-[0.2em] uppercase text-[#D4AF37] border border-[rgba(212,175,55,0.45)] transition-all duration-300 hover:bg-[rgba(212,175,55,0.06)] hover:border-[#D4AF37]"
+                style={{ borderRadius: '2px' }}
+              >
+                <User className="w-4 h-4" strokeWidth={1.4} />
+                Sign In
+              </Link>
             </div>
           </div>
 

@@ -7,3 +7,8 @@ tsconfig.tsbuildinfo
 
 # Old nested project (kept locally, not needed on GitHub)
 peacock-main/
+
+# local env files
+.env*.local
+.env
+

@@ -10,6 +10,7 @@ import AboutUs from "@/components/sections/AboutUs";
 import ClothQuality from "@/components/sections/ClothQuality";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import FooterSection from "@/components/sections/FooterSection";
+import Navbar from "@/components/marketplace/Navbar";
 import { Toaster } from "sonner";
 import React from "react";
 
@@ -29,6 +30,7 @@ export default function LandingPage() {
 
       <CustomCursor />
       <AmbientToggle />
+      <Navbar />
 
       <SmoothScroll>
         <main data-testid="pk-landing-root">
