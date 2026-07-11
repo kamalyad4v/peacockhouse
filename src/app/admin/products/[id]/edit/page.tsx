@@ -5,7 +5,7 @@ import { useRouter, useParams } from "next/navigation";
 import { ArrowLeft, Save, AlertCircle } from "lucide-react";
 import Link from "next/link";
 import { toast, Toaster } from "sonner";
-import { ProductFormFields } from "@/app/admin/products/new/page";
+import { ProductFormFields } from "@/components/ProductFormFields";
 import React from "react";
 
 export default function EditProductPage() {
